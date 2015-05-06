@@ -5,7 +5,7 @@
 	<artifactId>crux-parent</artifactId>
 	<packaging>pom</packaging>
 	<name>Crux Parent</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<description>Crux Framework parent POM</description>
 
 	<properties>
@@ -112,7 +112,7 @@
                                     <charset>${project.build.sourceEncoding}</charset>
                                     <outputDirectory>${javadoc.dir}</outputDirectory>
                                     <overview>${javadoc.dir}/overview.html</overview>
-                                    <source>1.5</source>
+                                    <source>1.7</source>
                                     <destDir></destDir>
                                 </configuration>
                             </execution>
@@ -145,19 +145,6 @@
                     <id>crux</id>
                     <name>Crux Internal Repository</name>
                     <url>${internal.repository}</url>
-                </repository>
-            </distributionManagement>
-        </profile>
-        
-        <!-- GWT Snapshot repository -->
-        <profile>
-            <id>profile-add-gwt-snapshot-repo</id>
-            <activation><activeByDefault>true</activeByDefault></activation>
-            <distributionManagement>
-                <repository>
-                    <id>gwtsnapshot</id>
-                    <name>GWT Snapshot Repository</name>
-                    <url>https://oss.sonatype.org/content/repositories/google-snapshots/</url>
                 </repository>
             </distributionManagement>
         </profile>
