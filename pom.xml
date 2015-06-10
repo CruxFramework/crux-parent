@@ -5,12 +5,14 @@
 	<artifactId>crux-parent</artifactId>
 	<packaging>pom</packaging>
 	<name>Crux Parent</name>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<description>Crux Framework parent POM</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<javadoc.dir>${basedir}/javadoc</javadoc.dir>
+		<java.target.version>1.7</java.target.version>
+		<java.source.version>1.7</java.source.version>
 	</properties>
 
 	<parent>
@@ -71,8 +73,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>${java.source.version}</source>
+					<target>${java.target.version}</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -112,7 +114,7 @@
                                     <charset>${project.build.sourceEncoding}</charset>
                                     <outputDirectory>${javadoc.dir}</outputDirectory>
                                     <overview>${javadoc.dir}/overview.html</overview>
-                                    <source>1.7</source>
+                                    <source>${java.source.version}</source>
                                     <destDir></destDir>
                                 </configuration>
                             </execution>
