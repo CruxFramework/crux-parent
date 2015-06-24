@@ -5,14 +5,14 @@
 	<artifactId>crux-parent</artifactId>
 	<packaging>pom</packaging>
 	<name>Crux Parent</name>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<description>Crux Framework parent POM</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<javadoc.dir>${basedir}/javadoc</javadoc.dir>
-		<java.target.version>1.6</java.target.version>
-		<java.source.version>1.6</java.source.version>
+		<java.target.version>1.7</java.target.version>
+		<java.source.version>1.7</java.source.version>
 	</properties>
 
 	<parent>
