@@ -70,6 +70,7 @@
 				<configuration>
 					<source>${java.source.version}</source>
 					<target>${java.target.version}</target>
+					<compilerArgument>-proc:none</compilerArgument>
 				</configuration>
 			</plugin>
 			<plugin>
